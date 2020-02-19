@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="product-box">
+        <div class="product" draggable="true" ondragstart="drag(event)" ondragend="makeWhite()" id="hdd">
+            <div class="img-box">
+                <img draggable="false" src="https://getprostorage.com/wp-content/uploads/2017/10/20171017_Hard_Drive_Failure_ProStorage-HTA_HDD.jpg" alt="HDD">
+            </div>
+            HDD <br> --------------------- <br> 80$
+        </div>
+        <div class="product" draggable="true" ondragstart="drag(event)" ondragend="makeWhite()" id="sdd">
+            <div class="img-box">
+                <img draggable="false" src="https://cnet2.cbsistatic.com/img/X0qRdRS-WL3FIuwdlYSCdqXd9Oo=/868x488/2012/03/01/590cac79-67c3-11e3-a665-14feb5ca9861/2.JPG" alt="SDD">
+            </div>
+            SDD <br> --------------------- <br> 150$
+        </div>
+        <div class="product" draggable="true" ondragstart="drag(event)" ondragend="makeWhite()" id="usbdrive">
+            <div class="img-box">
+                <img draggable="false" src="https://cdn.shopify.com/s/files/1/1805/1105/products/black_e22aae7d-7906-4794-ab06-24c747c059b2.png?v=1527363424" alt="USB Drive">
+            </div>
+            USB Drive <br> --------------------- <br> 8$
+        </div>
+    </div>
+
+    <div id="cart-box">
+        <div id="cart" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="button-box">
+            <button onclick="empty()">Clear Cart</button>
+            <label for="budget">Budget:</label>
+            <input id="budget" type="text" name="budgettt" placeholder="Enter your budget">
+            <div id="total-box">
+                <div id="total">Total: 0$</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
