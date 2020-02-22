@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <slider>
+        <div id="slider">
+            <!-- <li class="active"><img src="img/rabstol_net_space_37.jpg"></li>
+            <li><img src="img/slide.jpg"></li>
+            <li><img src="img/slide.jpg"></li> -->
+        </div>
+    </slider>
+
+    <main>
+        <h1>Товары</h1>
+        <div id="product-box">
+            <div class="product" draggable="true" ondragstart="drag(event)" ondragend="makeWhite()" id="hdd">
+                <p>HDD</p>
+                <div>
+                    <img draggable="false" src="https://getprostorage.com/wp-content/uploads/2017/10/20171017_Hard_Drive_Failure_ProStorage-HTA_HDD.jpg" alt="HDD">
+                </div>
+                <p>Цена: 80$</p>
+            </div>
+            <div class="product" draggable="true" ondragstart="drag(event)" ondragend="makeWhite()" id="sdd">
+                <p>SDD</p>
+                <div>
+                    <img draggable="false" src="https://cnet2.cbsistatic.com/img/X0qRdRS-WL3FIuwdlYSCdqXd9Oo=/868x488/2012/03/01/590cac79-67c3-11e3-a665-14feb5ca9861/2.JPG" alt="SDD">
+                </div>
+                <p>Цена: 150$</p>
+            </div>
+            <div class="product" draggable="true" ondragstart="drag(event)" ondragend="makeWhite()" id="usbdrive">
+                <p>USB Drive</p>
+                <div>
+                    <img draggable="false" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQsK4cwnwZqyq2bMV_Jap0i_eIm1UwJnrRUlzIioKlnvnSElS0k" alt="USB Drive">
+                </div>
+                <p>Цена: 10$</p>
+            </div>
+        </div>
+
+        <div id="product-box">
+            <div class="product" draggable="true" ondragstart="drag(event)" ondragend="makeWhite()" id="monitor">
+                <p>Monitor</p>
+                <div>
+                    <img draggable="false" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTxrGAK475svXBlAvDuYUYqQp9VvBhXhvpyswfnjRSxmkgdi8ZY" alt="Monitor">
+                </div>
+                <p>Цена: 200$</p>
+            </div>
+            <div class="product" draggable="true" ondragstart="drag(event)" ondragend="makeWhite()" id="keyboard">
+                <p>Keyboard</p>
+                <div>
+                    <img draggable="false" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSheexXvAs1230ZkTVH-7ak2tJvHNy2MV_k4f_0Wku5x08FUIGY" alt="Keyboard">
+                </div>
+                <p>Цена: 100$</p>
+            </div>
+            <div class="product" draggable="true" ondragstart="drag(event)" ondragend="makeWhite()" id="gamepad">
+                <p>Gamepad</p>
+                <div>
+                     <img draggable="false" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQy6hhTQaO4NGSD2d-D2n8C5NTduNsYbDw9qcNfBr5kVzS_kj9K" alt="Gamepad">
+                </div>
+                <p>Цена: 40$</p>
+            </div>
+        </div>
+
+        <h1>Перетащите товары в корзину</h1>
+        <div class="img-box">    
+            <div id="cart-box">
+                <div id="cart" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </div>
+    </main>
+
+    <footer>
+        <nav>
+            <button onclick="empty()">Удалить все</button>
+            <span>
+                <label for="budget">Бюджет $:</label>
+                <input id="budget" type="text" name="budgettt" placeholder="Введите ваш бюджет">
+            </span>
+            <span id="total-box">
+                <span id="total">Всего: 0$</span>
+            </span>
+        </nav>
+    </footer>
+
+</body>
+</html>
