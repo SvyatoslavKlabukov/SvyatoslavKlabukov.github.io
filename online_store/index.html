@@ -9,18 +9,31 @@
     <title>Document</title>
 </head>
 <body>
+    <header>
+        <nav>
+            <a id="logo" href="index.html"></a>
+            <ul class="menu">
+                <li class="active"><a href="#">Главная</a></li>
+                <!-- <li><a href="#">Категории</a></li> -->
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Войти</a></li>
+            </ul>
+            <form>
+                <input type="search" placeholder="поиск">
+                <input type="submit" value="Найти">
+            </form>
+        </nav>
+    </header>
 
-    <slider>
-        <div id="slider">
-            <!-- <li class="active"><img src="img/rabstol_net_space_37.jpg"></li>
-            <li><img src="img/slide.jpg"></li>
-            <li><img src="img/slide.jpg"></li> -->
+    <left>
+        <div class="news">
+            <p>Новости</p>
         </div>
-    </slider>
+    </left>
 
     <main>
         <h1>Товары</h1>
-        <div id="product-box">
+        <div class="product-box">
             <div class="product" draggable="true" ondragstart="drag(event)" ondragend="makeWhite()" id="hdd">
                 <p>HDD</p>
                 <div>
@@ -44,7 +57,7 @@
             </div>
         </div>
 
-        <div id="product-box">
+        <div class="product-box">
             <div class="product" draggable="true" ondragstart="drag(event)" ondragend="makeWhite()" id="monitor">
                 <p>Monitor</p>
                 <div>
@@ -69,17 +82,23 @@
         </div>
 
         <h1>Перетащите товары в корзину</h1>
-        <div class="img-box">    
+        <!-- <div class="img-box">     -->
             <div id="cart-box">
                 <div id="cart" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
             </div>
     </main>
 
+    <right>
+        <div class="news">
+            <p>Реклама</p>
+        </div>
+    </right>
+
     <footer>
         <nav>
             <button onclick="empty()">Удалить все</button>
             <span>
-                <label for="budget">Бюджет $:</label>
+                <label id="footer_label" for="budget">Бюджет $:</label>
                 <input id="budget" type="text" name="budgettt" placeholder="Введите ваш бюджет">
             </span>
             <span id="total-box">

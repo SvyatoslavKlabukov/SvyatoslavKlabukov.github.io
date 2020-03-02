@@ -1,7 +1,7 @@
 function drag(ev) {
     ev.dataTransfer.setData("text", ev.target.id);
     document.querySelector("#cart").style.backgroundColor = "#bf94e4";
-    document.querySelector("#cart").style.border = "4px dotted";
+    document.querySelector("#cart").style.border = "2px dashed";
   }
   
   function allowDrop(ev) {
@@ -52,19 +52,18 @@ function drag(ev) {
     <div class="img-box">    
     <img draggable="false" src="${imgSrc}" alt="${productName}">
     </div>
-    ${productName}
+    <div id="product-title">${productName}</div>
     <div class="product-in-cart-box">
-    <br>
-    Цена: ${productPrice}$ <br>
-    Количество: ${amount} <br>
-    Сумма: ${productPrice * amount}$
+    <p>Цена: ${productPrice}$ </p>
+    <p>Кол-во: ${amount} </p>
+    <p>Сумма: ${productPrice * amount}$</p>
     </div>
     `;
     
     if (cart.querySelector("#" + node.id + "-in-cart") == null) {
       cart.appendChild(product); 
     }
-    total.textContent = `Total: ${totalPrice + productPrice}$`;
+    total.textContent = `Всего: ${totalPrice + productPrice}$`;
   }
   
   function empty() {
@@ -72,6 +71,6 @@ function drag(ev) {
     while (cart.firstChild) {
       cart.removeChild(cart.firstChild);
     }
-    document.querySelector("#total").textContent = "Total: 0$";
+    document.querySelector("#total").textContent = "Всего: 0$";
     document.querySelector("#budget").value="";
   }
