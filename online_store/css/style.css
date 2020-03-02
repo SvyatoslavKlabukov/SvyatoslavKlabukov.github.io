@@ -268,6 +268,9 @@ main h1 {
       font-size: 1.5em;
       height: 100%; /* чтобы вся высота */
     }
+    #cart {
+      width: 99.6%;
+    }
 
   }
   @media screen  and (min-width: 551px) and (max-width: 700px){
@@ -282,6 +285,9 @@ main h1 {
       grid-template-columns: repeat(1, 1fr); /* повтор один раз */
       font-size: 1.5em;
       height: 100%; /* чтобы вся высота */
+    }
+    #cart {
+      width: 99.5%;
     }
   }
 
@@ -318,16 +324,7 @@ main h1 {
       display: none;
     }
     #cart {
-      border: 1px dashed;
-      border-radius: 7px;
-      width: 99.5%;
-      height: 99%;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: flex-start;
-      margin: 0;
-      padding: 0;
+      width: 99.3%;
     }
   }
 
