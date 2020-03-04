@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="flex">
+        <div class="info-patient">
+            <p id="info-panel">Информация о пациенте</p>
+            <p class="info-p-first">ФИО<span id="fio"></span></p>
+            <span id="underline-fio"></span>
+            <p class="info-p">Возраст<span id="age"></span></p>
+            <span id="underline-age"></span>
+            <p class="info-p">Диагноз<span id="diagnosis"></span></p>
+            <span id="underline-diagnosis"></span>
+        </div>
+        <div class="container">
+            <div class="tab">
+                <button id="tab-present" class="tablinks active" onclick="openTab(event, 'present')">ПРИСУТСТВУЮТ( )</button>
+                <button id="tab-quitting" class="tablinks" onclick="openTab(event, 'quitting')">ВЫБЫВШИЕ()</button>
+            </div>
+            <table id="present" class="tabcontent" style="display: table;">
+                <tr>
+                    <th>№ИБ</th><th>ФИО</th><th>Палата</th>
+                </tr>
+            </table>
+
+            <table id="quitting" class="tabcontent">
+                <tr>
+                    <th>№ИБ</th><th>ФИО</th><th>Причина выбытия</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

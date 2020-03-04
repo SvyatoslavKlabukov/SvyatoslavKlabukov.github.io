@@ -1,0 +1,107 @@
+.flex {
+    display: flex;
+    justify-content: center;
+}
+/*------левая область------*/
+.info-patient{
+    width: 50%;
+    height: auto;
+    margin: 5px 5px 5px 2px;
+    border: 1px solid rgb(51,152,204); 
+}
+#info-panel{
+    background: rgb(51,152,204);
+    color: white;
+    padding: 14px 16px;
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif; 
+}
+
+.info-p-first{
+    margin-bottom: 10px;
+}
+.info-p{
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+#underline-fio{
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid grey;
+    display: inline-block;
+    width: 250px;
+    margin-left: 40px;
+    padding-top: 20px; 
+}
+#underline-age{
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid grey;
+    display: inline-block;
+    width: 250px;
+    margin-left: 55px;
+    padding-top: 20px; 
+}
+#underline-diagnosis{
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid grey;
+    display: inline-block;
+    width: 250px;
+    margin-left: 55px;
+    padding-top: 20px; 
+}
+#fio , #age, #diagnosis {
+    margin-left: 20px;
+}
+
+/*------таблица-----------*/
+.container{
+    width: 50%;
+    height: auto;
+    margin: 5px 2px ;
+}
+table {
+    width: 100%;
+    border: 1px solid grey; /* Рамка вокруг таблицы */
+    border-collapse: collapse; /* Убираем двойные линии между ячейками */
+    background: white;
+}
+td, th {
+    margin: 5px;
+    text-align: left;
+    border-bottom: 1px solid grey;
+    width: 33.33%;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 10px 3px;
+}
+td {
+    cursor: pointer;
+}
+th{
+    font-weight:lighter;
+    color: grey;
+}
+/*-----вкладки таблицы-----------------*/
+.tab {
+    overflow: hidden;
+    border: 1px solid grey;
+    border-bottom: none; 
+    background-color: rgb(249,249,249);
+}
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+}
+
+.tab button.active {
+    border-bottom: 2px solid rgb(82,144,169) ;
+    color: rgb(146,183,189);
+}
+.tabcontent {
+    display: none;
+}
